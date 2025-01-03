@@ -59,3 +59,18 @@ those pages need to be written back to disk.
 7. OS Interface (backend) is the layer that differs on which operating system 
 SQLite was compiled for.
 
+### Building an In-Memory, Append Only, Single-Table Database
+
+Current things to support :
+1. Support two operations : Inserting a row and printing all rows
+2. Reside only in-memory (no presistance to disk)
+3. Support a single, hard-coded table
+
+Hard-coded table structure
+{
+  id: integer,
+  username: varchar(32),
+  email: varchar(255)
+}
+
+
